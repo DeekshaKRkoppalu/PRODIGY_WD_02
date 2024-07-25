@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('smart.jpg') no-repeat center center fixed; /* Replace with your image file path */
+    background-size: cover; /* Cover the entire background */
+    color: white; /* White font color for better contrast */
+}
+
+.stopwatch-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 50px; /* Adjust padding as needed */
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue transparent background color */
+    color: rgb(50, 4, 4); /* Black font color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    font-size: 3em;
+    margin: 20px 0;
+    color: black; /* Black font color for stopwatch display */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px; /* Round shape for button */
+    font-family: Arial, sans-serif; /* Changing font style of the buttons */
+    background-color: #bdbdbd; /* Grey background color for buttons */
+    color:black; /* Blue font color */
+    font-weight: bold; /* Make text bold */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: transform 0.2s; /* Transition for button press effect */
+}
+
+.buttons button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.buttons button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
